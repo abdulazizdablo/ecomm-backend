@@ -8,7 +8,7 @@ function Productlist() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(async () => {
 
-        let result = await fetch('http://localhost:8000/api/list');
+        let result = await fetch('https://abdulazizecom.herokuapp.com/api/list');
         result = await result.json();
         setData(result)
 

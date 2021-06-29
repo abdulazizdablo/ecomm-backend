@@ -13,7 +13,7 @@ function App() {
     <div className="App">
     
     <BrowserRouter>
-    <Header/>
+    <Header />
 
 <Route path="/login"><Login/></Route>
 

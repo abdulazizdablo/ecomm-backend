@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react'
 import React , {useState,useEffect} from 'react'
 import {useHistory} from 'react-router-dom'
 import Header from './Header'
@@ -40,7 +41,9 @@ headers:{
   result=await result.json()
   localStorage.setItem("user-info",JSON.stringify(result))
   history.push("/add")
-}
+};
+// eslint-disable-next-line no-lone-blocks
+
     return(
 <>
 
@@ -61,8 +64,9 @@ headers:{
 
 </div>
  </>
+  
+    );
+  }
 
-    )
-    
-}
+
 export default Register

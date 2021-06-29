@@ -16,7 +16,7 @@ formData.append('file',file)
 formData.append('file',price)
 formData.append('file',name)
 formData.append('file',description)
-let result = await fetch("http://localhost:8000/api/addproduct",{
+let result = await fetch("https://abdulazizecom.herokuapp.com/api/addproduct",{
 method : 'POST',
 body: formData
  });
@@ -27,7 +27,7 @@ alert("Data has been saved")
     return(
 
 <div>        
-<Header />
+
 <div className="col-sm-6 offset-sm-3">
 <br />
 <input type="text" className="form-control" placeholder="Name" onChange={(e)=>setName(e.target.value)}></input>

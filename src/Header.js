@@ -10,6 +10,19 @@ function logOut(){
 localStorage.clear();
 history.push('/register')
 }
+
+function Change(){
+
+if (user){
+
+
+const title="Add Product";
+
+return title
+}
+
+
+}
     return(
 
 <div>        
@@ -21,7 +34,7 @@ history.push('/register')
 localStorage.getItem("user-info") ?
 <>
  
-      <Link to="/add">Add Product</Link>
+      <Link to="/add" >Add Product</Link>
     <Link to="/update">Update Product</Link>
    </>
    :
